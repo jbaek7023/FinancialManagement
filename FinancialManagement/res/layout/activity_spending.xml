@@ -1,0 +1,238 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".SpendingActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spendingfor"
+            android:textColor="#33A7FF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/reportuser"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/id"
+            android:textColor="#33A7FF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/startingdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5sp"
+            android:hint="@string/startdate"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/startingcalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/startdate"
+            android:onClick="OnStartClick"
+            android:src="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/thru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:text="@string/wave"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/endingdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5sp"
+            android:hint="@string/enddate"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/endingcalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15sp"
+            android:layout_marginTop="5sp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/enddate"
+            android:onClick="OnEndClick"
+            android:src="@drawable/calendar" />
+
+        <ImageButton
+            android:id="@+id/spendupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/update"
+            android:onClick="OnUpdateClick"
+            android:src="@drawable/update" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/spendmeal"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/meal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/spendmealvalue"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mealval" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/spendgrocery"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/grocery"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/spendgroceryvalue"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/groceryval" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/spendingshopping"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/shopping"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/spendingshoppingvalue"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/shoppingval" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/spendinggas"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gas"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/spendinggasvalue"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gasval" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/spendingUtility"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/utility"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/spendingUtilityvalue"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/utilityval" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp" >
+
+        <TextView
+            android:id="@+id/spendingtotal"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/spendingtotalvalue"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/totalval" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/spendingchart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/graph"
+            android:onClick="OnGraphClick"
+            android:src="@drawable/chart" />
+
+        <ImageButton
+            android:id="@+id/spendingX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/x"
+            android:onClick="OnXClick"
+            android:src="@drawable/x" />
+    </LinearLayout>
+
+</LinearLayout>

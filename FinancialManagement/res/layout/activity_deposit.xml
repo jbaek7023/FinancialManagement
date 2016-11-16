@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DepositActivity" >
+
+    <ImageButton
+        android:id="@+id/depositX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/x"
+        android:onClick="OnXClick"
+        android:src="@drawable/x" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/depositdollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dollar"
+            android:textSize="50sp" />
+
+        <EditText
+            android:id="@+id/depositamount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical|right"
+            android:hint="@string/hint"
+            android:inputType="numberDecimal"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/depositcalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31sp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/calendaricon"
+            android:onClick="OnCalendarClick"
+            android:src="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/depositDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="15sp"
+            android:hint="@string/dateeg" />
+
+        <ImageButton
+            android:id="@+id/googlebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="100sp"
+            android:background="#ffffff"
+            android:onClick="OnGoogleClick"
+            android:src="@drawable/google" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/depositlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/deposit"
+        android:textColor="#33A7FF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+        <ImageButton
+            android:id="@+id/savings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/extra"
+            android:onClick="OnClick"
+            android:src="@drawable/savings" />
+
+        <ImageButton
+            android:id="@+id/salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/salary"
+            android:onClick="OnClick"
+            android:src="@drawable/salary" />
+
+        <ImageButton
+            android:id="@+id/misc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/misc"
+            android:onClick="OnClick"
+            android:src="@drawable/misc" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/expenselist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/expense"
+        android:textColor="#33A7FF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin" >
+
+        <ImageButton
+            android:id="@+id/food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/meal"
+            android:onClick="OnClick"
+            android:src="@drawable/food" />
+
+        <ImageButton
+            android:id="@+id/shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/shop"
+            android:onClick="OnClick"
+            android:src="@drawable/shopping" />
+
+        <ImageButton
+            android:id="@+id/gas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/gas"
+            android:onClick="OnClick"
+            android:src="@drawable/gas" />
+
+        <ImageButton
+            android:id="@+id/grocery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/grocery"
+            android:onClick="OnClick"
+            android:src="@drawable/grocery" />
+
+        <ImageButton
+            android:id="@+id/utility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/bill"
+            android:onClick="OnClick"
+            android:src="@drawable/utility" />
+    </LinearLayout>
+
+</LinearLayout>

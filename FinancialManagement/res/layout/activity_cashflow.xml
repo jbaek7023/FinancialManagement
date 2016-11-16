@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".CashflowActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cashflowfor"
+            android:textColor="#33A7FF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cashreportuser"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/id"
+            android:textColor="#33A7FF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/cashstartingdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5sp"
+            android:hint="@string/startdate"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/cashstartingcalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/startdate"
+            android:onClick="OnStartClick"
+            android:src="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/cashthru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:text="@string/wave"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cashendingdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5sp"
+            android:hint="@string/enddate"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/cashendingcalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15sp"
+            android:layout_marginTop="5sp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/enddate"
+            android:onClick="OnEndClick"
+            android:src="@drawable/calendar" />
+
+        <ImageButton
+            android:id="@+id/cashspendupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/update"
+            android:onClick="OnUpdateClick"
+            android:src="@drawable/update" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/cashincome"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/income"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cashincomeval"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/incomeval" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/cashexpense"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/expense"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cashexpenseval"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/expenseval" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp" >
+
+        <TextView
+            android:id="@+id/cashTotal"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/flow"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cashTotalval"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/flowval" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/cashchart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/graph"
+            android:onClick="OnGraphClick"
+            android:src="@drawable/chart" />
+
+        <ImageButton
+            android:id="@+id/cashX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/x"
+            android:onClick="OnXClick"
+            android:src="@drawable/x" />
+    </LinearLayout>
+
+</LinearLayout>

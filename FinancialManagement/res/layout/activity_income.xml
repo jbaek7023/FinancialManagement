@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".SpendingActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/incomereport"
+            android:textColor="#33A7FF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/incomereportuser"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/id"
+            android:textColor="#33A7FF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/incomestartingdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5sp"
+            android:hint="@string/startdate"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/incomestartingcalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/startdate"
+            android:onClick="OnStartClick"
+            android:src="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/incomethru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:text="@string/wave"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/incomeendingdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5sp"
+            android:hint="@string/enddate"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/incomeendingcalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15sp"
+            android:layout_marginTop="5sp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/enddate"
+            android:onClick="OnEndClick"
+            android:src="@drawable/calendar" />
+
+        <ImageButton
+            android:id="@+id/incomeupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/update"
+            android:onClick="OnUpdateClick"
+            android:src="@drawable/update" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/incomesavings"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/saving"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/incomesavingsvalue"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/savingval" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/incomesalary"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/salary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/incomesalaryvalue"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/salaryval" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/incomemisc"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/misc"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/incomemiscvalue"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/miscval" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp" >
+
+        <TextView
+            android:id="@+id/incometotal"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/incometotalvalue"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/totalval" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/incomechart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/graph"
+            android:onClick="OnGraphClick"
+            android:src="@drawable/chart" />
+
+        <ImageButton
+            android:id="@+id/incomeX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/x"
+            android:onClick="OnXClick"
+            android:src="@drawable/x" />
+    </LinearLayout>
+
+</LinearLayout>
